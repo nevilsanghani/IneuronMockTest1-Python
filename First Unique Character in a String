@@ -1,0 +1,17 @@
+# cook your dish here
+
+s = "aabb"
+def func( s) :
+        dt={}
+        for i in s:
+            dt[i]=dt.get(i,0)+1
+
+        c=0
+        for i in s:
+            if(dt[i]==1):
+                return c
+            else: c=c+1
+
+        return -1
+
+print(func(s))
